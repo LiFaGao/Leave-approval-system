@@ -1,0 +1,73 @@
+@charset "utf-8";
+*{
+    margin: 0;
+}
+.mybg{
+    background-image: url("../photo/1.jpg");
+    background-size: 100% 100%;
+
+}
+.myall{
+    width: 1916px;
+    height: 934px;
+    *border: #0f0f0f 2px solid;
+}
+.myall .myhead{
+    width: 1916px;
+    height: 150px;
+    *border: #4cae4c 2px solid;
+}
+.myall .myhead p{
+    font-size: 100px;
+    color: #1b6d85;
+    margin-left: 650px;
+}
+.myall .mybody{
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: #0f0f0f 2px solid;
+}
+.myall .mybody .mytail{
+    width: 500px;
+    height: 100px;
+    margin-top: 84px;
+    *border: #0f0f0f 2px solid;
+    position: absolute;
+    bottom:325px;
+}
+.myall .mybody .mytail p{
+    font-size: 30px;
+    color: #1b6d85;
+    margin-top: 20px;
+    margin-left: 170px;
+}
+.mybody .item{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+     *border: red 2px solid;
+     width: 400px;
+}
+.mybody .item .mybox{
+    width: 250px;
+    margin-left: 20px;
+    *border: #4cae4c 2px solid;
+}
+.mybody .item .mybox2{
+    width: 120px;
+    margin-left: 0px;
+    *border: green 2px solid;
+    font-size: 17px;
+}
+.mybody .item .mybox3{
+    margin-left: 100px;
+}
+.mybody .mybox4{
+    width: 150px;
+    margin-left: 0px;
+    *border: green 2px solid;
+    font-size: 17px;
+}

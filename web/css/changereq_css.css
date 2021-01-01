@@ -1,0 +1,44 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+}
+.mytable{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    top: 15%;
+    left: 32%;
+    *border: red 2px solid;
+}
+.mytable .myone{
+    width: 600px;
+    height: 100px;
+    *border: #0f0f0f 2px solid;
+}
+.mytable .mytwo{
+    width: 600px;
+    height: 500px;
+    *border: #4cae4c 2px solid;
+}
+.mytext{
+    width: 300px;
+    margin-left: 15px;
+    *border: blue 2px solid;
+}
+.myLeftMargin{
+    *border: #0f0f0f 2px solid;
+    width: 150px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+.mymarginTop{
+    margin-top: 40px;
+}
+.mytable .myone p{
+    font-size: 45px;
+    margin-top: 20px;
+    margin-left: 150px;
+}
+.mymarginTop span{
+    font-size: 18px;
+}

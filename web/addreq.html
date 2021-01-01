@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/addreq_css.css">
+    <script src = "js/jquery.min.js"></script>
+    <script src = "js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $("#startTime").blur(function (data) {
+                var startTime = $(this).val();
+                var msg = $("#msg");
+                var patten = /([\d]{4})-([1][0-2]|[0][1-9])-([1-2][\d]|[0][1-9]|[3][0-1])/;
+                if(patten.test(startTime)){
+                    msg.css("color","green");
+                    msg.html("格式正确");
+                }else{
+                    msg.css("color","red");
+                    msg.html("格式不正确");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="mytable">
+    <div class="myone">
+        <P>
+            新增请假申请
+        </P>
+    </div>
+    <div class="mytwo">
+        <form action="/LeaveApprovalSystem/addReqServlet" method="post" class="form-horizontal">
+            <div class="form-group mymarginTop">
+                <label for="username" class="col-sm-2 control-label myLeftMargin">用户名</label>
+                <div class="col-sm-10 mytext">
+                    <input type="text" name="username" class="form-control" id="username" placeholder="用户名">
+                </div>
+            </div>
+            <div class="form-group mymarginTop">
+                <label for="reason" class="col-sm-2 control-label myLeftMargin">请假原因</label>
+                <div class="col-sm-10 mytext">
+                    <input type="text" name="reason" class="form-control" id="reason" placeholder="原因(尽量简单明了)">
+                </div>
+            </div>
+            <div class="form-group mymarginTop">
+                <label for="timeDay" class="col-sm-2 control-label myLeftMargin">时间(天)</label>
+                <div class="col-sm-10 mytext">
+                    <input type="text" name="timeDay" class="form-control" id="timeDay" placeholder="1">
+                </div>
+            </div>
+            <div class="form-group mymarginTop">
+                <label for="timeDay" class="col-sm-2 control-label myLeftMargin">开始日期</label>
+                <div class="col-sm-10 mytext">
+                    <input type="text" name="startTime" class="form-control" id="startTime" placeholder="格式为yyyy-mm-dd">
+                </div>
+                <span id="msg"></span>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10" style="margin-left: 200px;margin-top: 20px">
+                    <button type="submit" class="btn btn-default btn-lg">申请</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

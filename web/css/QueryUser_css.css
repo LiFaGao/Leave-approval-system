@@ -1,0 +1,51 @@
+@charset "utf-8";
+*{
+    margin: 0;
+}
+.all{
+    width: 1600px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    *border: red 2px solid;
+}
+.mylabel{
+    *border: #0f0f0f 2px solid;
+    width: 500px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mylabel p{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.all .myfirst{
+    width: 1198px;
+    height: 80px;
+    *border: #0f0f0f 2px solid;
+}
+.all .mysecond{
+    width: 1598px;
+    height: 400px;
+    *border: #4cae4c 2px solid;
+    margin-left: auto;
+    margin-right:auto;
+}
+.all .mythrid{
+    width: 1598px;
+    height: 80px;
+    *border: blue 2px solid;
+}
+.all .mythrid .box{
+    margin-top: 20px;
+    margin-left: 30px;
+    *border: #0f0f0f 2px solid;
+}
+.all .myfirst .inner{
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+}
